@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
     toggle.addEventListener('click', function(e) {
       e.preventDefault();
       const menu = this.nextElementSibling;
+      if (!menu) return;
       const isOpen = menu.classList.contains('open');
       menu.classList.toggle('open');
       const icon = this.querySelector('.dropdown-arrow');
@@ -67,14 +68,33 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Desktop dropdown keyboard support
+  const supportsHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
   document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
     const parent = toggle.closest('.dropdown');
     const menu = parent.querySelector('.dropdown-menu');
     const items = menu ? menu.querySelectorAll('a, button') : [];
 
+    toggle.addEventListener('click', function(e) {
+      if (supportsHover) return;
+      const isOpen = parent.classList.contains('open');
+      if (!isOpen) {
+        e.preventDefault();
+        document.querySelectorAll('.dropdown.open').forEach(drop => {
+          if (drop !== parent) {
+            drop.classList.remove('open');
+            const dropToggle = drop.querySelector('.dropdown-toggle');
+            if (dropToggle) dropToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+        parent.classList.add('open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+
     toggle.addEventListener('keydown', function(e) {
       if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
+        parent.classList.add('open');
         this.setAttribute('aria-expanded', 'true');
         if (items.length > 0) items[0].focus();
       }
@@ -82,6 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     parent.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') {
+        parent.classList.remove('open');
         toggle.setAttribute('aria-expanded', 'false');
         toggle.focus();
       }
@@ -96,7 +117,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const current = document.activeElement;
         const idx = Array.from(items).indexOf(current);
         if (idx > 0) items[idx - 1].focus();
-        else { toggle.focus(); toggle.setAttribute('aria-expanded', 'false'); }
+        else {
+          parent.classList.remove('open');
+          toggle.focus();
+          toggle.setAttribute('aria-expanded', 'false');
+        }
       }
     });
     toggle.setAttribute('aria-haspopup', 'true');
@@ -108,6 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.dropdown').forEach(drop => {
       if (!drop.contains(e.target)) {
         const toggle = drop.querySelector('.dropdown-toggle');
+        drop.classList.remove('open');
         if (toggle) toggle.setAttribute('aria-expanded', 'false');
       }
     });
