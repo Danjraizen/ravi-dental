@@ -1,0 +1,474 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const head = "<meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Dr. Ravi's Dental & Orofacial Pain Clinic | Best Dentist in Mogappair Chennai</title>\n  <meta name=\"description\" content=\"Expert dental care & orofacial pain treatment in Mogappair, Chennai. 15+ years experience. Root canal, implants, teeth whitening, TMJ, migraine & facial pain specialist.\">\n  <meta name=\"keywords\" content=\"dental clinic Chennai, orofacial pain, dentist Mogappair, root canal, dental implant, teeth whitening, TMJ treatment, migraine headache, facial pain specialist, Dr Ravi dental\">\n  <meta name=\"author\" content=\"Dr. Ravi's Dental and Orofacial Pain Clinic\">\n  <meta name=\"robots\" content=\"index, follow\">\n  <link rel=\"canonical\" href=\"https://mogappairdentalclinic.com/\">\n  <link rel=\"icon\" type=\"image/png\" href=\"/logo orofacial.png\">\n\n  <!-- Open Graph -->\n  <meta property=\"og:type\" content=\"website\">\n  <meta property=\"og:url\" content=\"https://mogappairdentalclinic.com/\">\n  <meta property=\"og:title\" content=\"Dr. Ravi's Dental & Orofacial Pain Clinic | Best Dentist in Mogappair Chennai\">\n  <meta property=\"og:description\" content=\"Expert dental care & orofacial pain treatment in Mogappair, Chennai. 15+ years experience. Root canal, implants, teeth whitening, TMJ, migraine & facial pain specialist.\">\n  <meta property=\"og:image\" content=\"https://mogappairdentalclinic.com/logo orofacial.png\">\n  <meta property=\"og:site_name\" content=\"Dr. Ravi's Dental and Orofacial Pain Clinic\">\n\n  <!-- Twitter Card -->\n  <meta name=\"twitter:card\" content=\"summary_large_image\">\n  <meta name=\"twitter:title\" content=\"Dr. Ravi's Dental & Orofacial Pain Clinic | Best Dentist in Mogappair Chennai\">\n  <meta name=\"twitter:description\" content=\"Expert dental care & orofacial pain treatment in Mogappair, Chennai. 15+ years experience. Root canal, implants, teeth whitening, TMJ, migraine & facial pain specialist.\">\n  <meta name=\"twitter:image\" content=\"https://mogappairdentalclinic.com/logo orofacial.png\">\n\n  <!-- Fonts -->\n  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n  <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n  <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap\" rel=\"stylesheet\">\n\n  <!-- Icons -->\n  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css\">\n\n  <!-- Styles -->\n  <link rel=\"stylesheet\" href=\"/css/styles.css\">\n\n  <script type=\"application/ld+json\">{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"MedicalBusiness\",\n  \"name\": \"Dr. Ravi's Dental and Orofacial Pain Clinic\",\n  \"image\": \"https://mogappairdentalclinic.com/logo orofacial.png\",\n  \"@id\": \"https://mogappairdentalclinic.com\",\n  \"url\": \"https://mogappairdentalclinic.com\",\n  \"telephone\": \"+919962002537\",\n  \"email\": \"info@ravidentalclinic.com\",\n  \"address\": {\n    \"@type\": \"PostalAddress\",\n    \"streetAddress\": \"No 911, HIG, 35HG+G8M, 1st Main Rd, Mogappair Eri Scheme, Mogappair\",\n    \"addressLocality\": \"Chennai\",\n    \"addressRegion\": \"Tamil Nadu\",\n    \"postalCode\": \"600037\",\n    \"addressCountry\": \"IN\"\n  },\n  \"geo\": {\n    \"@type\": \"GeoCoordinates\",\n    \"latitude\": 13.0827,\n    \"longitude\": 80.2707\n  },\n  \"openingHoursSpecification\": [\n    {\"@type\": \"OpeningHoursSpecification\", \"dayOfWeek\": [\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"], \"opens\": \"09:30\", \"closes\": \"12:30\"},\n    {\"@type\": \"OpeningHoursSpecification\", \"dayOfWeek\": [\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"], \"opens\": \"17:00\", \"closes\": \"21:00\"}\n  ],\n  \"priceRange\": \"$$\",\n  \"medicalSpecialty\": [\"Dentistry\", \"Orofacial Pain\"],\n  \"aggregateRating\": {\n    \"@type\": \"AggregateRating\",\n    \"ratingValue\": \"4.9\",\n    \"reviewCount\": \"150\"\n  }\n}</script>";
+const navbar = "<a href=\"#main-content\" class=\"skip-link\">Skip to main content</a>\n  <!-- Top Bar -->\n  <div class=\"top-bar\">\n    <div class=\"container top-bar-inner\">\n      <div class=\"top-bar-left\">\n        <a href=\"tel:919962002537\"><i class=\"fas fa-phone\"></i> +91 99620 02537</a>\n        <a href=\"mailto:info@ravidentalclinic.com\"><i class=\"fas fa-envelope\"></i> info@ravidentalclinic.com</a>\n      </div>\n      <div class=\"top-bar-right\">\n        <span><i class=\"fas fa-clock\"></i> Mon-Sat: 9:30 AM - 9:00 PM</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Header -->\n  <header class=\"header\">\n    <div class=\"container header-inner\">\n      <a href=\"/\" class=\"logo\">\n        <img src=\"/logo orofacial.png\" alt=\"Dr. Ravi's Dental and Orofacial Pain Clinic Logo\" width=\"52\" height=\"48\">\n        <div class=\"logo-text\">\n          <span class=\"brand-name\">Dr. Ravi's Dental</span>\n          <span class=\"brand-tagline\">& Orofacial Pain Clinic</span>\n        </div>\n      </a>\n\n      <nav class=\"nav-desktop\">\n        <a href=\"/\" class=\"nav-link active\">Home</a><a href=\"/about/\" class=\"nav-link \">About Us</a>\n            <div class=\"dropdown\">\n              <a href=\"/services/\" class=\"nav-link dropdown-toggle \">Services <i class=\"fas fa-chevron-down\" style=\"font-size:0.7rem;\"></i></a>\n              <div class=\"dropdown-menu\">\n                <a href=\"/services/\" class=\"dropdown-item\" style=\"font-weight:600;color:var(--primary);\">All Services</a>\n                <div style=\"border-top:1px solid var(--gray-200);margin:0.25rem 0;\"></div>\n                <a href=\"/services/teeth-whitening/\" class=\"dropdown-item\">Teeth Whitening</a>\n<a href=\"/services/tooth-restoration/\" class=\"dropdown-item\">Tooth Restoration</a>\n<a href=\"/services/root-canal-treatment/\" class=\"dropdown-item\">Root Canal Treatment</a>\n<a href=\"/services/paediatric-dentistry/\" class=\"dropdown-item\">Paediatric Dentistry</a>\n<a href=\"/services/extraction/\" class=\"dropdown-item\">Extraction</a>\n<a href=\"/services/ceramic-crown/\" class=\"dropdown-item\">Ceramic Crown</a>\n<a href=\"/services/veneers-and-laminates/\" class=\"dropdown-item\">Veneers & Laminates</a>\n<a href=\"/services/dental-implant/\" class=\"dropdown-item\">Dental Implant</a>\n<a href=\"/services/fixed-and-removable-dentures/\" class=\"dropdown-item\">Fixed & Removable Dentures</a>\n<a href=\"/services/orthodontic-treatment/\" class=\"dropdown-item\">Orthodontic Treatment</a>\n<a href=\"/services/invisible-aligners/\" class=\"dropdown-item\">Invisible Aligners</a>\n<a href=\"/services/periodontal-treatment/\" class=\"dropdown-item\">Periodontal Treatment</a>\n              </div>\n            </div>\n            <div class=\"dropdown\">\n              <a href=\"/pain-treatments/\" class=\"nav-link dropdown-toggle \">Pain Treatments <i class=\"fas fa-chevron-down\" style=\"font-size:0.7rem;\"></i></a>\n              <div class=\"dropdown-menu\">\n                <a href=\"/pain-treatments/\" class=\"dropdown-item\" style=\"font-weight:600;color:var(--primary);\">All Pain Treatments</a>\n                <div style=\"border-top:1px solid var(--gray-200);margin:0.25rem 0;\"></div>\n                <a href=\"/pain-treatments/dental-pain/\" class=\"dropdown-item\">Dental Pain</a>\n<a href=\"/pain-treatments/headache/\" class=\"dropdown-item\">Headache</a>\n<a href=\"/pain-treatments/migraine/\" class=\"dropdown-item\">Migraine</a>\n<a href=\"/pain-treatments/temporomandibular-joint-pain/\" class=\"dropdown-item\">Temporomandibular Joint Pain</a>\n<a href=\"/pain-treatments/snoring/\" class=\"dropdown-item\">Snoring & Sleep Apnea</a>\n<a href=\"/pain-treatments/undiagnosed-facial-pains/\" class=\"dropdown-item\">Undiagnosed Facial Pains</a>\n              </div>\n            </div><a href=\"/gallery/\" class=\"nav-link \">Gallery</a><a href=\"/contact/\" class=\"nav-link \">Contact Us</a>\n        <a href=\"/contact/\" class=\"btn btn-primary\" style=\"margin-left:0.5rem;padding:0.6rem 1.25rem;font-size:0.85rem;\">Book Appointment</a>\n      </nav>\n\n      <button type=\"button\" class=\"mobile-toggle\" aria-label=\"Toggle menu\">\n        <span></span><span></span><span></span>\n      </button>\n    </div>\n  </header>\n\n  <!-- Mobile Navigation -->\n  <div class=\"mobile-overlay\"></div>\n  <nav class=\"mobile-nav\"><button type=\"button\" class=\"mobile-close\" aria-label=\"Close menu\"><i class=\"fas fa-times\"></i></button>\n    <a href=\"/\" class=\"mobile-nav-link active\">Home</a>\n    <a href=\"/about/\" class=\"mobile-nav-link \">About Us</a>\n    <div>\n      <a href=\"/services/\" class=\"mobile-nav-link mobile-dropdown-toggle \">\n        Services <i class=\"fas fa-chevron-down dropdown-arrow\" style=\"transition:transform 0.3s;\"></i>\n      </a>\n      <div class=\"mobile-dropdown-menu\">\n        <a href=\"/services/teeth-whitening/\" class=\"mobile-nav-link\">Teeth Whitening</a>\n<a href=\"/services/tooth-restoration/\" class=\"mobile-nav-link\">Tooth Restoration</a>\n<a href=\"/services/root-canal-treatment/\" class=\"mobile-nav-link\">Root Canal Treatment</a>\n<a href=\"/services/paediatric-dentistry/\" class=\"mobile-nav-link\">Paediatric Dentistry</a>\n<a href=\"/services/extraction/\" class=\"mobile-nav-link\">Extraction</a>\n<a href=\"/services/ceramic-crown/\" class=\"mobile-nav-link\">Ceramic Crown</a>\n<a href=\"/services/veneers-and-laminates/\" class=\"mobile-nav-link\">Veneers & Laminates</a>\n<a href=\"/services/dental-implant/\" class=\"mobile-nav-link\">Dental Implant</a>\n<a href=\"/services/fixed-and-removable-dentures/\" class=\"mobile-nav-link\">Fixed & Removable Dentures</a>\n<a href=\"/services/orthodontic-treatment/\" class=\"mobile-nav-link\">Orthodontic Treatment</a>\n<a href=\"/services/invisible-aligners/\" class=\"mobile-nav-link\">Invisible Aligners</a>\n<a href=\"/services/periodontal-treatment/\" class=\"mobile-nav-link\">Periodontal Treatment</a>\n      </div>\n    </div>\n    <div>\n      <a href=\"/pain-treatments/\" class=\"mobile-nav-link mobile-dropdown-toggle \">\n        Pain Treatments <i class=\"fas fa-chevron-down dropdown-arrow\" style=\"transition:transform 0.3s;\"></i>\n      </a>\n      <div class=\"mobile-dropdown-menu\">\n        <a href=\"/pain-treatments/dental-pain/\" class=\"mobile-nav-link\">Dental Pain</a>\n<a href=\"/pain-treatments/headache/\" class=\"mobile-nav-link\">Headache</a>\n<a href=\"/pain-treatments/migraine/\" class=\"mobile-nav-link\">Migraine</a>\n<a href=\"/pain-treatments/temporomandibular-joint-pain/\" class=\"mobile-nav-link\">Temporomandibular Joint Pain</a>\n<a href=\"/pain-treatments/snoring/\" class=\"mobile-nav-link\">Snoring & Sleep Apnea</a>\n<a href=\"/pain-treatments/undiagnosed-facial-pains/\" class=\"mobile-nav-link\">Undiagnosed Facial Pains</a>\n      </div>\n    </div>\n    <a href=\"/gallery/\" class=\"mobile-nav-link \">Gallery</a>\n    <a href=\"/contact/\" class=\"mobile-nav-link \">Contact Us</a>\n    <a href=\"/contact/\" class=\"btn btn-primary\" style=\"margin-top:1rem;width:100%;\">Book Appointment</a>\n  </nav>";
+const footer = "<!-- Footer -->\n  <footer class=\"footer section-padding\" style=\"padding-bottom:0;\">\n    <div class=\"container\">\n      <div class=\"footer-grid\">\n        <div class=\"footer-brand\">\n          <img src=\"/logo orofacial.png\" alt=\"Dr. Ravi's Dental and Orofacial Pain Clinic\" width=\"52\" height=\"56\">\n          <p>Leading dental and orofacial pain clinic in Mogappair, Chennai. We combine advanced dental care with specialized pain management for complete oral health and comfort.</p>\n          <div class=\"footer-social\">\n            <a href=\"#\" aria-label=\"Facebook\"><i class=\"fab fa-facebook-f\"></i></a>\n            <a href=\"#\" aria-label=\"Instagram\"><i class=\"fab fa-instagram\"></i></a>\n            <a href=\"#\" aria-label=\"YouTube\"><i class=\"fab fa-youtube\"></i></a>\n            <a href=\"#\" aria-label=\"LinkedIn\"><i class=\"fab fa-linkedin-in\"></i></a>\n          </div>\n        </div>\n        <div>\n          <h4 class=\"footer-title\">Dental Services</h4>\n          <ul class=\"footer-links\">\n            <li><a href=\"/services/teeth-whitening/\"><i class=\"fas fa-chevron-right\" style=\"font-size:0.6rem;\"></i> Teeth Whitening</a></li>\n<li><a href=\"/services/tooth-restoration/\"><i class=\"fas fa-chevron-right\" style=\"font-size:0.6rem;\"></i> Tooth Restoration</a></li>\n<li><a href=\"/services/root-canal-treatment/\"><i class=\"fas fa-chevron-right\" style=\"font-size:0.6rem;\"></i> Root Canal Treatment</a></li>\n<li><a href=\"/services/paediatric-dentistry/\"><i class=\"fas fa-chevron-right\" style=\"font-size:0.6rem;\"></i> Paediatric Dentistry</a></li>\n<li><a href=\"/services/extraction/\"><i class=\"fas fa-chevron-right\" style=\"font-size:0.6rem;\"></i> Extraction</a></li>\n<li><a href=\"/services/ceramic-crown/\"><i class=\"fas fa-chevron-right\" style=\"font-size:0.6rem;\"></i> Ceramic Crown</a></li>\n            <li><a href=\"/services/\"><i class=\"fas fa-chevron-right\" style=\"font-size:0.6rem;\"></i> View All Services</a></li>\n          </ul>\n        </div>\n        <div>\n          <h4 class=\"footer-title\">Pain Treatments</h4>\n          <ul class=\"footer-links\">\n            <li><a href=\"/pain-treatments/dental-pain/\"><i class=\"fas fa-chevron-right\" style=\"font-size:0.6rem;\"></i> Dental Pain</a></li>\n<li><a href=\"/pain-treatments/headache/\"><i class=\"fas fa-chevron-right\" style=\"font-size:0.6rem;\"></i> Headache</a></li>\n<li><a href=\"/pain-treatments/migraine/\"><i class=\"fas fa-chevron-right\" style=\"font-size:0.6rem;\"></i> Migraine</a></li>\n<li><a href=\"/pain-treatments/temporomandibular-joint-pain/\"><i class=\"fas fa-chevron-right\" style=\"font-size:0.6rem;\"></i> Temporomandibular Joint Pain</a></li>\n<li><a href=\"/pain-treatments/snoring/\"><i class=\"fas fa-chevron-right\" style=\"font-size:0.6rem;\"></i> Snoring & Sleep Apnea</a></li>\n<li><a href=\"/pain-treatments/undiagnosed-facial-pains/\"><i class=\"fas fa-chevron-right\" style=\"font-size:0.6rem;\"></i> Undiagnosed Facial Pains</a></li>\n            <li><a href=\"/pain-treatments/\"><i class=\"fas fa-chevron-right\" style=\"font-size:0.6rem;\"></i> View All Treatments</a></li>\n          </ul>\n        </div>\n        <div>\n          <h4 class=\"footer-title\">Contact Us</h4>\n          <ul class=\"footer-contact\">\n            <li><i class=\"fas fa-map-marker-alt\"></i> <span>No 911, HIG, 35HG+G8M, 1st Main Rd, Mogappair Eri Scheme, Mogappair, Chennai, Greater Chennai, Tamil Nadu 600037</span></li>\n            <li><i class=\"fas fa-phone\"></i> <a href=\"tel:919962002537\">+91 99620 02537</a></li>\n            <li><i class=\"fas fa-envelope\"></i> <a href=\"mailto:info@ravidentalclinic.com\">info@ravidentalclinic.com</a></li>\n            <li><i class=\"fas fa-clock\"></i> <span>Mon-Sat: 9:30 AM - 12:30 PM, 5:00 PM - 9:00 PM</span></li>\n          </ul>\n        </div>\n      </div>\n      <div class=\"footer-bottom\">\n        <p>&copy; 2026 Dr. Ravi's Dental and Orofacial Pain Clinic. All rights reserved.</p>\n        <p>Designed with care for healthier smiles.</p>\n      </div>\n    </div>\n  </footer>\n\n  <!-- WhatsApp Float -->\n  <a href=\"https://wa.me/919962002537\" class=\"whatsapp-float\" target=\"_blank\" rel=\"noopener\" aria-label=\"Chat on WhatsApp\">\n    <i class=\"fab fa-whatsapp\"></i>\n  </a>";
+---
+
+<Layout head={head} navbar={navbar} footer={footer}>
+<main id="main-content">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-shape"></div>
+    <div class="container hero-content">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-label">
+            <i class="fas fa-star"></i> Trusted Dental & Pain Care in Chennai
+          </div>
+          <h1 class="hero-title">Your Smile Deserves <span>Expert Care</span></h1>
+          <p class="hero-desc">Advanced dental treatments combined with specialized orofacial pain management. From routine checkups to complex TMJ therapy — experience compassionate, precision care at Mogappair's leading dental clinic.</p>
+          <div class="hero-btns">
+            <a href="/contact/" class="btn btn-accent">Book Consultation</a>
+            <a href="/services/" class="btn btn-outline" style="border-color:rgba(255,255,255,0.4);color:#fff;">Explore Services</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="hero-stat-number" data-counter="15" data-suffix="+">0+</div>
+              <div class="hero-stat-label">Years Experience</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number" data-counter="10" data-suffix="K+">0+</div>
+              <div class="hero-stat-label">Happy Patients</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number" data-counter="12" data-suffix="+">0+</div>
+              <div class="hero-stat-label">Expert Doctors</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image-wrap">
+          <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80" alt="Dr. Ravi Dental Clinic Chennai" class="hero-image" loading="eager">
+          <div class="hero-float-card card-1">
+            <div class="float-icon"><i class="fas fa-award"></i></div>
+            <div class="float-text">15+ Years<br><span>Clinical Excellence</span></div>
+          </div>
+          <div class="hero-float-card card-2">
+            <div class="float-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="float-text">Safe & Sterile<br><span>Advanced Protocols</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Counter -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-counter="10" data-suffix="K+">0+</div>
+          <div class="stat-label">Happy Patients</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-counter="90" data-suffix="+">0+</div>
+          <div class="stat-label">Implants Placed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-counter="15" data-suffix="+">0+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-counter="5" data-suffix="K+">0+</div>
+          <div class="stat-label">Dentures Fitted</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-counter="8" data-suffix="K+">0+</div>
+          <div class="stat-label">Crowns Delivered</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80" alt="Modern dental clinic Chennai" class="about-img-main" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80" alt="Dental treatment in progress" class="about-img-accent" loading="lazy">
+          <div class="about-badge">
+            <div class="about-badge-number">15+</div>
+            <div class="about-badge-text">Years of<br>Excellence</div>
+          </div>
+        </div>
+        <div class="animate-on-scroll">
+          <span class="section-label">About Our Clinic</span>
+          <h2 class="section-title">Expert Doctors, Seamless Appointments, Quality Care</h2>
+          <p style="color:var(--gray-600);margin-bottom:1rem;line-height:1.8;">At Dr. Ravi's Dental and Orofacial Pain Clinic, we are committed to delivering exceptional dental care with a personal touch. Led by Dr. Ravi, a seasoned dentist with years of experience in both general and advanced dentistry, our clinic focuses on patient comfort, hygiene, and long-lasting oral health.</p>
+          <p style="color:var(--gray-600);margin-bottom:1.5rem;line-height:1.8;">We are also Chennai's trusted destination for <strong>orofacial pain management</strong> — treating headaches, migraines, TMJ disorders, and undiagnosed facial pains with advanced diagnostic tools and personalized therapy plans.</p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fas fa-check"></i></div>
+              <div><strong style="color:var(--dark);">Experienced & Gentle Dentist</strong><br><span style="font-size:0.9rem;color:var(--gray-500);">15+ years of clinical practice with thousands of successful treatments</span></div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fas fa-check"></i></div>
+              <div><strong style="color:var(--dark);">Modern Equipment & Sterilization</strong><br><span style="font-size:0.9rem;color:var(--gray-500);">Digital X-rays, intra-oral scanners, and strict infection control</span></div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fas fa-check"></i></div>
+              <div><strong style="color:var(--dark);">Affordable & Transparent Pricing</strong><br><span style="font-size:0.9rem;color:var(--gray-500);">No hidden costs. Clear treatment plans with flexible options</span></div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fas fa-check"></i></div>
+              <div><strong style="color:var(--dark);">Emergency Care Available</strong><br><span style="font-size:0.9rem;color:var(--gray-500);">Same-day appointments for dental emergencies and acute pain</span></div>
+            </div>
+          </div>
+          <a href="/about/" class="btn btn-primary" style="margin-top:1.5rem;">Learn More About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:3rem;">
+        <span class="section-label">Our Services</span>
+        <h2 class="section-title" style="margin:0 auto 1rem;">A Wide Range of Dental Services</h2>
+        <p class="section-subtitle" style="margin:0 auto;">From preventive checkups and painless root canals to cosmetic smile makeovers and advanced implant treatments — all delivered with precision, care, and compassion.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-tooth"></i></div>
+          <h3>Teeth Whitening</h3>
+          <p>Brighten your smile safely with professional teeth whitening treatments.</p>
+          <a href="/services/teeth-whitening/" class="service-link">Read More <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+        </div><div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-tooth"></i></div>
+          <h3>Tooth Restoration</h3>
+          <p>Restore damaged teeth with advanced composite fillings and bonding.</p>
+          <a href="/services/tooth-restoration/" class="service-link">Read More <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+        </div><div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-tooth"></i></div>
+          <h3>Root Canal Treatment</h3>
+          <p>Save infected teeth with painless, precise root canal therapy.</p>
+          <a href="/services/root-canal-treatment/" class="service-link">Read More <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+        </div><div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-tooth"></i></div>
+          <h3>Paediatric Dentistry</h3>
+          <p>Gentle, friendly dental care tailored for children's growing smiles.</p>
+          <a href="/services/paediatric-dentistry/" class="service-link">Read More <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+        </div><div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-tooth"></i></div>
+          <h3>Extraction</h3>
+          <p>Safe and gentle tooth extractions performed with utmost care.</p>
+          <a href="/services/extraction/" class="service-link">Read More <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+        </div><div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-tooth"></i></div>
+          <h3>Ceramic Crown</h3>
+          <p>Durable, natural-looking ceramic crowns to protect and enhance teeth.</p>
+          <a href="/services/ceramic-crown/" class="service-link">Read More <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+        </div><div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-tooth"></i></div>
+          <h3>Veneers & Laminates</h3>
+          <p>Transform your smile with custom veneers that cover imperfections.</p>
+          <a href="/services/veneers-and-laminates/" class="service-link">Read More <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+        </div><div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-tooth"></i></div>
+          <h3>Dental Implant</h3>
+          <p>Permanent tooth replacement with titanium implants and custom crowns.</p>
+          <a href="/services/dental-implant/" class="service-link">Read More <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+        </div><div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-tooth"></i></div>
+          <h3>Fixed & Removable Dentures</h3>
+          <p>Custom dentures designed for comfort, function, and natural appearance.</p>
+          <a href="/services/fixed-and-removable-dentures/" class="service-link">Read More <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+        </div><div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-tooth"></i></div>
+          <h3>Orthodontic Treatment</h3>
+          <p>Straighten teeth and correct bites with modern braces and wires.</p>
+          <a href="/services/orthodontic-treatment/" class="service-link">Read More <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+        </div><div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-tooth"></i></div>
+          <h3>Invisible Aligners</h3>
+          <p>Clear, removable aligners for discreet teeth straightening.</p>
+          <a href="/services/invisible-aligners/" class="service-link">Read More <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+        </div><div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-tooth"></i></div>
+          <h3>Periodontal Treatment</h3>
+          <p>Treat gum disease and maintain healthy gums with expert periodontal care.</p>
+          <a href="/services/periodontal-treatment/" class="service-link">Read More <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:2.5rem;">
+        <a href="/services/" class="btn btn-outline">View All Dental Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pain Treatments Section (NEW) -->
+  <section class="section-padding pain-section">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:3rem;">
+        <span class="section-label">Pain Management</span>
+        <h2 class="section-title" style="margin:0 auto 1rem;">Relieving Pain, Restoring Lives</h2>
+        <p class="section-subtitle" style="margin:0 auto;">Expert orofacial pain diagnosis and treatment for headaches, migraines, TMJ disorders, snoring, and unexplained facial pain. We don't just treat symptoms — we find and fix the root cause.</p>
+      </div>
+      <div class="pain-grid">
+        <div class="pain-card animate-on-scroll">
+          <div class="pain-card-icon"><i class="fas fa-heartbeat"></i></div>
+          <h3>Dental Pain</h3>
+          <p>Expert diagnosis and treatment for toothaches, pulpitis, abscesses, and post-procedural pain.</p>
+          <a href="/pain-treatments/dental-pain/" class="service-link">Learn More <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+        </div><div class="pain-card animate-on-scroll">
+          <div class="pain-card-icon"><i class="fas fa-heartbeat"></i></div>
+          <h3>Headache</h3>
+          <p>Identify and treat tension headaches, cervicogenic headaches, and referred orofacial pain.</p>
+          <a href="/pain-treatments/headache/" class="service-link">Learn More <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+        </div><div class="pain-card animate-on-scroll">
+          <div class="pain-card-icon"><i class="fas fa-heartbeat"></i></div>
+          <h3>Migraine</h3>
+          <p>Specialized care for migraines with orofacial triggers and trigeminal neuralgia connections.</p>
+          <a href="/pain-treatments/migraine/" class="service-link">Learn More <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+        </div><div class="pain-card animate-on-scroll">
+          <div class="pain-card-icon"><i class="fas fa-heartbeat"></i></div>
+          <h3>Temporomandibular Joint Pain</h3>
+          <p>Comprehensive TMJ/TMD diagnosis and therapy for jaw pain, clicking, and dysfunction.</p>
+          <a href="/pain-treatments/temporomandibular-joint-pain/" class="service-link">Learn More <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+        </div><div class="pain-card animate-on-scroll">
+          <div class="pain-card-icon"><i class="fas fa-heartbeat"></i></div>
+          <h3>Snoring & Sleep Apnea</h3>
+          <p>Oral appliance therapy for snoring and obstructive sleep apnea management.</p>
+          <a href="/pain-treatments/snoring/" class="service-link">Learn More <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+        </div><div class="pain-card animate-on-scroll">
+          <div class="pain-card-icon"><i class="fas fa-heartbeat"></i></div>
+          <h3>Undiagnosed Facial Pains</h3>
+          <p>Advanced diagnostic protocols for persistent facial pain with no clear origin.</p>
+          <a href="/pain-treatments/undiagnosed-facial-pains/" class="service-link">Learn More <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i></a>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:2.5rem;">
+        <a href="/pain-treatments/" class="btn btn-white">Explore Pain Treatments</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section-padding bg-gray-50">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:3rem;">
+        <span class="section-label">Why Choose Us</span>
+        <h2 class="section-title" style="margin:0 auto 1rem;">Exceptional Care For Every Patient</h2>
+        <p class="section-subtitle" style="margin:0 auto;">With 15 years of trusted service, we blend advanced technology with a heartfelt, patient-first approach to keep every smile healthy, bright, and pain-free.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card animate-on-scroll">
+          <div class="why-icon"><i class="fas fa-user-md"></i></div>
+          <div>
+            <h4>15+ Years of Expertise</h4>
+            <p>Fifteen years of clinical excellence in Chennai — thousands of successful treatments and happy, pain-free smiles.</p>
+          </div>
+        </div>
+        <div class="why-card animate-on-scroll">
+          <div class="why-icon"><i class="fas fa-users"></i></div>
+          <div>
+            <h4>Family-Friendly Environment</h4>
+            <p>From kids to seniors, we create a warm, welcoming space where every patient feels safe, relaxed, and cared for.</p>
+          </div>
+        </div>
+        <div class="why-card animate-on-scroll">
+          <div class="why-icon"><i class="fas fa-microscope"></i></div>
+          <div>
+            <h4>Fast Process, Best Results</h4>
+            <p>Digital X-rays, intra-oral scanners, and same-day crowns mean less chair time and long-lasting outcomes.</p>
+          </div>
+        </div>
+        <div class="why-card animate-on-scroll">
+          <div class="why-icon"><i class="fas fa-certificate"></i></div>
+          <div>
+            <h4>Professional Dental Team</h4>
+            <p>Friendly, highly skilled dentists and assistants who listen, explain, and treat every patient like family.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:3rem;">
+        <span class="section-label">How We Work</span>
+        <h2 class="section-title" style="margin:0 auto 1rem;">How Can We Care For Your Smile Today?</h2>
+        <p class="section-subtitle" style="margin:0 auto;">A simple, transparent process designed around your comfort and convenience.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-card animate-on-scroll">
+          <div class="process-number">01</div>
+          <h4>Book Appointment</h4>
+          <p>Call, WhatsApp, or fill our online form. Same-day slots available for emergencies.</p>
+        </div>
+        <div class="process-card animate-on-scroll">
+          <div class="process-number">02</div>
+          <h4>Consultation & Diagnosis</h4>
+          <p>Comprehensive examination with digital X-rays and personalized treatment planning.</p>
+        </div>
+        <div class="process-card animate-on-scroll">
+          <div class="process-number">03</div>
+          <h4>Treatment</h4>
+          <p>Painless, precise procedures using modern equipment and strict sterilization.</p>
+        </div>
+        <div class="process-card animate-on-scroll">
+          <div class="process-number">04</div>
+          <h4>Follow-Up Care</h4>
+          <p>Post-treatment guidance, scheduled checkups, and long-term oral health support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:3rem;">
+        <span class="section-label">Our Team</span>
+        <h2 class="section-title" style="margin:0 auto 1rem;">The Care You Need, The Service You Deserve</h2>
+        <p class="section-subtitle" style="margin:0 auto;">Meet our dedicated team of dental professionals committed to your health and comfort.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card animate-on-scroll">
+          <div class="team-img-wrap">
+            <img src="/team-avatar.svg" alt="Dr. Ravi - Chief Dentist" class="team-img" loading="lazy">
+          </div>
+          <div class="team-info">
+            <h4>Dr. Ravi</h4>
+            <p>Chief Dentist & Orofacial Pain Specialist</p>
+            <div class="team-social">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-card animate-on-scroll">
+          <div class="team-img-wrap">
+            <img src="/team-avatar.svg" alt="Dr. Vaishnav - Dental Surgeon" class="team-img" loading="lazy">
+          </div>
+          <div class="team-info">
+            <h4>Dr. Vaishnav</h4>
+            <p>Dental Surgeon & Implantologist</p>
+            <div class="team-social">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-card animate-on-scroll">
+          <div class="team-img-wrap">
+            <img src="/team-avatar.svg" alt="Dr. Priya - Orthodontist" class="team-img" loading="lazy">
+          </div>
+          <div class="team-info">
+            <h4>Dr. Priya</h4>
+            <p>Orthodontist & Aligner Specialist</p>
+            <div class="team-social">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-card animate-on-scroll">
+          <div class="team-img-wrap">
+            <img src="/team-avatar.svg" alt="Dr. Meera - Periodontist" class="team-img" loading="lazy">
+          </div>
+          <div class="team-info">
+            <h4>Dr. Meera</h4>
+            <p>Periodontist & Gum Care Expert</p>
+            <div class="team-social">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:3rem;">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title" style="margin:0 auto 1rem;">Frequently Asked Questions</h2>
+        <p class="section-subtitle" style="margin:0 auto;">Find quick answers to common questions about our dental treatments, procedures, and patient care.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button type="button" class="faq-question">What dental services do you provide? <span class="faq-icon"><i class="fas fa-chevron-down"></i></span></button>
+          <div class="faq-answer"><p>We provide a full range of dental services including cleanings, fillings, tooth extractions, root canal treatments, braces, crowns, veneers, teeth whitening, dentures, implants, and smile makeovers. We also specialize in orofacial pain management for headaches, migraines, TMJ disorders, and facial pain.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question">Is tooth extraction painful? <span class="faq-icon"><i class="fas fa-chevron-down"></i></span></button>
+          <div class="faq-answer"><p>Not at all! Extractions are performed under local anesthesia, and we ensure you're comfortable throughout the process. Most patients feel only mild pressure, not pain. We also offer post-extraction care instructions and follow-up to ensure smooth healing.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question">What are veneers and laminates? <span class="faq-icon"><i class="fas fa-chevron-down"></i></span></button>
+          <div class="faq-answer"><p>Veneers and laminates are thin shells placed over teeth to fix discoloration, chips, gaps, or slight misalignments — giving you a brighter, even smile. They are custom-made for each patient and bonded permanently to the front surface of teeth.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question">When is a root canal needed? <span class="faq-icon"><i class="fas fa-chevron-down"></i></span></button>
+          <div class="faq-answer"><p>A root canal is needed when a tooth's nerve is infected or damaged due to deep decay, trauma, or cracks. It helps save the natural tooth and relieves pain caused by infection. Symptoms include severe toothache, prolonged sensitivity, and gum swelling.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question">Do you handle dental emergencies? <span class="faq-icon"><i class="fas fa-chevron-down"></i></span></button>
+          <div class="faq-answer"><p>Yes, we handle dental emergencies such as severe toothaches, broken teeth, knocked-out teeth, and injuries. Just call us at +91 99620 02537 and we'll ensure you're treated as soon as possible with same-day appointments when needed.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question">Do you treat headaches and facial pain? <span class="faq-icon"><i class="fas fa-chevron-down"></i></span></button>
+          <div class="faq-answer"><p>Yes! As an orofacial pain clinic, we diagnose and treat tension headaches, migraines, TMJ/TMD disorders, trigeminal neuralgia, and undiagnosed facial pains. We use advanced diagnostic tools to identify the root cause and create personalized treatment plans.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section-padding bg-gray-50">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:3rem;">
+        <span class="section-label">Testimonials</span>
+        <h2 class="section-title" style="margin:0 auto 1rem;">What Our Patients Say</h2>
+        <p class="section-subtitle" style="margin:0 auto;">Real reviews from real patients who trust us with their smiles and pain relief.</p>
+      </div>
+      <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="testimonial-text">"Highly recommended! Dr. Ravi Dental Clinic offers exceptional service and professional care. Dr. Ravi is knowledgeable, patient, and takes the time to explain every procedure clearly. The clinic is clean and the staff are warm and welcoming."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80" alt="Patient" class="testimonial-avatar" loading="lazy">
+            <div><div class="testimonial-name">Anitha K.</div><div class="testimonial-role">Dental Implant Patient</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="testimonial-text">"We highly recommend Dr Ravi sir for any dental issues... Sir has been very kind, compassionate, patient, in treating my child... Very much reliable and affordable. Sir customises his treatment based on every child's individual needs."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80" alt="Patient" class="testimonial-avatar" loading="lazy">
+            <div><div class="testimonial-name">Ramesh P.</div><div class="testimonial-role">Pediatric Dentistry</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="testimonial-text">"I suffered from chronic jaw pain and headaches for years. Dr. Ravi diagnosed my TMJ disorder and the treatment has been life-changing. No more pain, no more migraines. Truly an orofacial pain expert!"</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=80" alt="Patient" class="testimonial-avatar" loading="lazy">
+            <div><div class="testimonial-name">Suresh M.</div><div class="testimonial-role">TMJ Treatment</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-padding cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready for a Healthier, Pain-Free Smile?</h2>
+        <p>Book your consultation today and take the first step towards exceptional dental care and lasting pain relief. Same-day appointments available for emergencies.</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+          <a href="/contact/" class="btn btn-accent">Book Appointment</a>
+          <a href="tel:919962002537" class="btn btn-white"><i class="fas fa-phone"></i> +91 99620 02537</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  </main>
+</Layout>

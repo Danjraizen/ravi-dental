@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">Anonymous clinical team avatar</title>
+  <desc id="desc">Neutral placeholder avatar for a dental clinic team member.</desc>
+  <rect width="400" height="400" fill="#f1f5f9"/>
+  <circle cx="200" cy="154" r="72" fill="#cbd5e1"/>
+  <path d="M78 380c12-82 60-126 122-126s110 44 122 126H78z" fill="#cbd5e1"/>
+  <circle cx="200" cy="154" r="52" fill="#ffffff" opacity=".35"/>
+  <path d="M122 382c10-52 40-82 78-82s68 30 78 82H122z" fill="#213f99" opacity=".14"/>
+</svg>

@@ -1,0 +1,363 @@
+{
+  "generatedAt": "2026-08-01T16:18:42.786Z",
+  "routesBuilt": 25,
+  "routes": [
+    "/",
+    "/404.html",
+    "/about/",
+    "/contact/",
+    "/gallery/",
+    "/pain-treatments/",
+    "/pain-treatments/dental-pain/",
+    "/pain-treatments/headache/",
+    "/pain-treatments/migraine/",
+    "/pain-treatments/snoring/",
+    "/pain-treatments/temporomandibular-joint-pain/",
+    "/pain-treatments/undiagnosed-facial-pains/",
+    "/services/",
+    "/services/ceramic-crown/",
+    "/services/dental-implant/",
+    "/services/extraction/",
+    "/services/fixed-and-removable-dentures/",
+    "/services/invisible-aligners/",
+    "/services/orthodontic-treatment/",
+    "/services/paediatric-dentistry/",
+    "/services/periodontal-treatment/",
+    "/services/root-canal-treatment/",
+    "/services/teeth-whitening/",
+    "/services/tooth-restoration/",
+    "/services/veneers-and-laminates/"
+  ],
+  "internalLinksChecked": [
+    "/",
+    "/about/",
+    "/contact/",
+    "/css/styles.css",
+    "/gallery/",
+    "/logo orofacial.png",
+    "/pain-treatments/",
+    "/pain-treatments/dental-pain/",
+    "/pain-treatments/headache/",
+    "/pain-treatments/migraine/",
+    "/pain-treatments/snoring/",
+    "/pain-treatments/temporomandibular-joint-pain/",
+    "/pain-treatments/undiagnosed-facial-pains/",
+    "/services/",
+    "/services/ceramic-crown/",
+    "/services/dental-implant/",
+    "/services/extraction/",
+    "/services/fixed-and-removable-dentures/",
+    "/services/invisible-aligners/",
+    "/services/orthodontic-treatment/",
+    "/services/paediatric-dentistry/",
+    "/services/periodontal-treatment/",
+    "/services/root-canal-treatment/",
+    "/services/teeth-whitening/",
+    "/services/tooth-restoration/",
+    "/services/veneers-and-laminates/"
+  ],
+  "internalImagesChecked": [
+    "/logo orofacial.png",
+    "/team-avatar.svg"
+  ],
+  "externalLinksSeen": [
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css",
+    "https://fonts.googleapis.com",
+    "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap",
+    "https://fonts.gstatic.com",
+    "https://mogappairdentalclinic.com/",
+    "https://mogappairdentalclinic.com/404/",
+    "https://mogappairdentalclinic.com/about/",
+    "https://mogappairdentalclinic.com/contact/",
+    "https://mogappairdentalclinic.com/gallery/",
+    "https://mogappairdentalclinic.com/pain-treatments/",
+    "https://mogappairdentalclinic.com/pain-treatments/dental-pain/",
+    "https://mogappairdentalclinic.com/pain-treatments/headache/",
+    "https://mogappairdentalclinic.com/pain-treatments/migraine/",
+    "https://mogappairdentalclinic.com/pain-treatments/snoring/",
+    "https://mogappairdentalclinic.com/pain-treatments/temporomandibular-joint-pain/",
+    "https://mogappairdentalclinic.com/pain-treatments/undiagnosed-facial-pains/",
+    "https://mogappairdentalclinic.com/services/",
+    "https://mogappairdentalclinic.com/services/ceramic-crown/",
+    "https://mogappairdentalclinic.com/services/dental-implant/",
+    "https://mogappairdentalclinic.com/services/extraction/",
+    "https://mogappairdentalclinic.com/services/fixed-and-removable-dentures/",
+    "https://mogappairdentalclinic.com/services/invisible-aligners/",
+    "https://mogappairdentalclinic.com/services/orthodontic-treatment/",
+    "https://mogappairdentalclinic.com/services/paediatric-dentistry/",
+    "https://mogappairdentalclinic.com/services/periodontal-treatment/",
+    "https://mogappairdentalclinic.com/services/root-canal-treatment/",
+    "https://mogappairdentalclinic.com/services/teeth-whitening/",
+    "https://mogappairdentalclinic.com/services/tooth-restoration/",
+    "https://mogappairdentalclinic.com/services/veneers-and-laminates/",
+    "https://wa.me/919962002537"
+  ],
+  "externalImagesSeen": [
+    "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=800&q=80",
+    "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80",
+    "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80",
+    "https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=600&q=80",
+    "https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=800&q=80",
+    "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+    "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
+    "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
+    "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80",
+    "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80",
+    "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=80",
+    "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&q=80",
+    "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&q=80",
+    "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80",
+    "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
+    "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=600&q=80",
+    "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=800&q=80",
+    "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&q=80",
+    "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80",
+    "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80",
+    "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80",
+    "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.323014539886!2d80.1758291!3d13.078703299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5263aae9d4c407%3A0xc23577cb74e4a6e6!2sDr.%20Ravi's%20Dental%20and%20Orofacial%20pain%20clinic!5e0!3m2!1sen!2sin!4v1785599189894!5m2!1sen!2sin"
+  ],
+  "metadata": [
+    {
+      "route": "/404.html",
+      "title": "Page Not Found | Dr. Ravi's Dental & Orofacial Pain Clinic",
+      "description": "",
+      "canonical": "https://mogappairdentalclinic.com/404/",
+      "robots": "noindex, follow",
+      "ogTitle": "",
+      "structuredData": false
+    },
+    {
+      "route": "/about/",
+      "title": "About Us | Dr. Ravi's Dental & Orofacial Pain Clinic Chennai",
+      "description": "Learn about Dr. Ravi's 15+ years of dental excellence in Mogappair, Chennai. Our mission, vision, values, and commitment to pain-free smiles.",
+      "canonical": "https://mogappairdentalclinic.com/about/",
+      "robots": "index, follow",
+      "ogTitle": "About Us | Dr. Ravi's Dental & Orofacial Pain Clinic Chennai",
+      "structuredData": true
+    },
+    {
+      "route": "/contact/",
+      "title": "Contact Us | Dr. Ravi's Dental & Orofacial Pain Clinic Chennai",
+      "description": "Book your appointment at Dr. Ravi's Dental Clinic in Mogappair, Chennai. Call +91 99620 02537 or visit No 911, HIG, 35HG+G8M, 1st Main Rd, Mogappair Eri Scheme. Same-day emergency appointments.",
+      "canonical": "https://mogappairdentalclinic.com/contact/",
+      "robots": "index, follow",
+      "ogTitle": "Contact Dr. Ravi's Dental Clinic Chennai",
+      "structuredData": true
+    },
+    {
+      "route": "/gallery/",
+      "title": "Gallery | Dr. Ravi's Dental & Orofacial Pain Clinic Chennai",
+      "description": "View our dental clinic gallery in Mogappair, Chennai. Modern equipment, comfortable facilities, and happy patients at Dr. Ravi's Dental Clinic.",
+      "canonical": "https://mogappairdentalclinic.com/gallery/",
+      "robots": "index, follow",
+      "ogTitle": "Gallery | Dr. Ravi's Dental Clinic Chennai",
+      "structuredData": true
+    },
+    {
+      "route": "/",
+      "title": "Dr. Ravi's Dental & Orofacial Pain Clinic | Best Dentist in Mogappair Chennai",
+      "description": "Expert dental care & orofacial pain treatment in Mogappair, Chennai. 15+ years experience. Root canal, implants, teeth whitening, TMJ, migraine & facial pain specialist.",
+      "canonical": "https://mogappairdentalclinic.com/",
+      "robots": "index, follow",
+      "ogTitle": "Dr. Ravi's Dental & Orofacial Pain Clinic | Best Dentist in Mogappair Chennai",
+      "structuredData": true
+    },
+    {
+      "route": "/pain-treatments/dental-pain/",
+      "title": "Dental Pain Treatment Chennai | Emergency Toothache Relief Mogappair",
+      "description": "Expert dental pain treatment in Mogappair, Chennai. Emergency toothache relief, pulpitis treatment, abscess drainage, and post-procedural pain care at Dr. Ravi's Clinic.",
+      "canonical": "https://mogappairdentalclinic.com/pain-treatments/dental-pain/",
+      "robots": "index, follow",
+      "ogTitle": "Dental Pain Treatment Chennai | Emergency Toothache Relief Mogappair",
+      "structuredData": true
+    },
+    {
+      "route": "/pain-treatments/headache/",
+      "title": "Headache Treatment Chennai | Cervicogenic & Tension Headache Specialist Mogappair",
+      "description": "Specialized headache treatment in Mogappair, Chennai. Cervicogenic headaches, tension headaches from clenching, and orofacial pain connections treated at Dr. Ravi's Clinic.",
+      "canonical": "https://mogappairdentalclinic.com/pain-treatments/headache/",
+      "robots": "index, follow",
+      "ogTitle": "Headache Treatment Chennai | Cervicogenic & Tension Headache Specialist Mogappair",
+      "structuredData": true
+    },
+    {
+      "route": "/pain-treatments/",
+      "title": "Pain Treatments | Dr. Ravi's Dental & Orofacial Pain Clinic Chennai",
+      "description": "Specialized orofacial pain treatments in Mogappair, Chennai. TMJ, migraine, headache, dental pain, snoring, and undiagnosed facial pain management by Dr. Ravi.",
+      "canonical": "https://mogappairdentalclinic.com/pain-treatments/",
+      "robots": "index, follow",
+      "ogTitle": "Orofacial Pain Treatments Chennai | Dr. Ravi's Clinic",
+      "structuredData": true
+    },
+    {
+      "route": "/pain-treatments/migraine/",
+      "title": "Migraine Treatment Chennai | Orofacial Pain & Trigeminal Neuralgia Mogappair",
+      "description": "Migraine and trigeminal neuralgia treatment in Mogappair, Chennai. Orofacial triggers, dental connections, and specialized pain management at Dr. Ravi's Clinic.",
+      "canonical": "https://mogappairdentalclinic.com/pain-treatments/migraine/",
+      "robots": "index, follow",
+      "ogTitle": "Migraine Treatment Chennai | Orofacial Pain & Trigeminal Neuralgia Mogappair",
+      "structuredData": true
+    },
+    {
+      "route": "/pain-treatments/snoring/",
+      "title": "Snoring & Sleep Apnea Treatment Chennai | Oral Appliance Therapy Mogappair",
+      "description": "Snoring and sleep apnea treatment in Mogappair, Chennai. Custom oral appliances, mandibular advancement devices, and non-CPAP solutions at Dr. Ravi's Clinic.",
+      "canonical": "https://mogappairdentalclinic.com/pain-treatments/snoring/",
+      "robots": "index, follow",
+      "ogTitle": "Snoring & Sleep Apnea Treatment Chennai | Oral Appliance Therapy Mogappair",
+      "structuredData": true
+    },
+    {
+      "route": "/pain-treatments/temporomandibular-joint-pain/",
+      "title": "TMJ/TMD Treatment Chennai | Jaw Pain & Clicking Specialist Mogappair",
+      "description": "Expert TMJ/TMD treatment in Mogappair, Chennai. Jaw pain, clicking, locking, and temporomandibular disorders treated by Dr. Ravi's specialized orofacial pain team.",
+      "canonical": "https://mogappairdentalclinic.com/pain-treatments/temporomandibular-joint-pain/",
+      "robots": "index, follow",
+      "ogTitle": "TMJ/TMD Treatment Chennai | Jaw Pain & Clicking Specialist Mogappair",
+      "structuredData": true
+    },
+    {
+      "route": "/pain-treatments/undiagnosed-facial-pains/",
+      "title": "Undiagnosed Facial Pain Specialist Chennai | Atypical Facial Pain Mogappair",
+      "description": "Specialist for undiagnosed facial pain in Mogappair, Chennai. Atypical facial pain, burning mouth syndrome, and persistent idiopathic facial pain treated at Dr. Ravi's Clinic.",
+      "canonical": "https://mogappairdentalclinic.com/pain-treatments/undiagnosed-facial-pains/",
+      "robots": "index, follow",
+      "ogTitle": "Undiagnosed Facial Pain Specialist Chennai | Atypical Facial Pain Mogappair",
+      "structuredData": true
+    },
+    {
+      "route": "/services/ceramic-crown/",
+      "title": "Ceramic Crown Chennai | Dental Caps Mogappair | Zirconia & Porcelain",
+      "description": "Custom ceramic crowns and dental caps in Mogappair, Chennai. Zirconia, porcelain, and E-max crowns for natural-looking tooth restoration at Dr. Ravi's Clinic.",
+      "canonical": "https://mogappairdentalclinic.com/services/ceramic-crown/",
+      "robots": "index, follow",
+      "ogTitle": "Ceramic Crown Chennai | Dental Caps Mogappair | Zirconia & Porcelain",
+      "structuredData": true
+    },
+    {
+      "route": "/services/dental-implant/",
+      "title": "Dental Implants Chennai | Best Implantologist Mogappair | Titanium Implants",
+      "description": "Permanent dental implants in Mogappair, Chennai. Single tooth, multiple teeth, and full-mouth implant solutions at Dr. Ravi's Dental Clinic. 15+ years expertise.",
+      "canonical": "https://mogappairdentalclinic.com/services/dental-implant/",
+      "robots": "index, follow",
+      "ogTitle": "Dental Implants Chennai | Best Implantologist Mogappair | Titanium Implants",
+      "structuredData": true
+    },
+    {
+      "route": "/services/extraction/",
+      "title": "Tooth Extraction Chennai | Safe Dental Removal Mogappair | Dr. Ravi",
+      "description": "Gentle, safe tooth extractions in Mogappair, Chennai. Wisdom tooth removal, impacted teeth, and emergency extractions at Dr. Ravi's Dental Clinic.",
+      "canonical": "https://mogappairdentalclinic.com/services/extraction/",
+      "robots": "index, follow",
+      "ogTitle": "Tooth Extraction Chennai | Safe Dental Removal Mogappair | Dr. Ravi",
+      "structuredData": true
+    },
+    {
+      "route": "/services/fixed-and-removable-dentures/",
+      "title": "Dentures Chennai | Fixed & Removable Dentures Mogappair | Dr. Ravi",
+      "description": "Custom fixed and removable dentures in Mogappair, Chennai. Complete, partial, and implant-supported dentures for natural-looking smiles at Dr. Ravi's Clinic.",
+      "canonical": "https://mogappairdentalclinic.com/services/fixed-and-removable-dentures/",
+      "robots": "index, follow",
+      "ogTitle": "Dentures Chennai | Fixed & Removable Dentures Mogappair | Dr. Ravi",
+      "structuredData": true
+    },
+    {
+      "route": "/services/",
+      "title": "Dental Services | Dr. Ravi's Dental & Orofacial Pain Clinic Chennai",
+      "description": "Complete dental care in Mogappair: teeth whitening, root canal, implants, braces, crowns, veneers, dentures, paediatric dentistry & pain management.",
+      "canonical": "https://mogappairdentalclinic.com/services/",
+      "robots": "index, follow",
+      "ogTitle": "Dental Services | Dr. Ravi's Dental & Orofacial Pain Clinic Chennai",
+      "structuredData": true
+    },
+    {
+      "route": "/services/invisible-aligners/",
+      "title": "Invisible Aligners Chennai | Clear Aligners Mogappair | Invisalign Alternative",
+      "description": "Clear invisible aligners in Mogappair, Chennai. Discreet teeth straightening without braces. Custom clear aligners at Dr. Ravi's Dental Clinic.",
+      "canonical": "https://mogappairdentalclinic.com/services/invisible-aligners/",
+      "robots": "index, follow",
+      "ogTitle": "Invisible Aligners Chennai | Clear Aligners Mogappair | Invisalign Alternative",
+      "structuredData": true
+    },
+    {
+      "route": "/services/orthodontic-treatment/",
+      "title": "Braces Treatment Chennai | Orthodontist Mogappair | Metal & Ceramic Braces",
+      "description": "Expert orthodontic treatment in Mogappair, Chennai. Metal braces, ceramic braces, and self-ligating braces for children and adults at Dr. Ravi's Clinic.",
+      "canonical": "https://mogappairdentalclinic.com/services/orthodontic-treatment/",
+      "robots": "index, follow",
+      "ogTitle": "Braces Treatment Chennai | Orthodontist Mogappair | Metal & Ceramic Braces",
+      "structuredData": true
+    },
+    {
+      "route": "/services/paediatric-dentistry/",
+      "title": "Paediatric Dentistry Chennai | Kids Dentist Mogappair | Child Dental Care",
+      "description": "Gentle, friendly paediatric dentist in Mogappair, Chennai. Specialized dental care for children including preventive treatments, fluoride, sealants, and habit counseling.",
+      "canonical": "https://mogappairdentalclinic.com/services/paediatric-dentistry/",
+      "robots": "index, follow",
+      "ogTitle": "Paediatric Dentistry Chennai | Kids Dentist Mogappair | Child Dental Care",
+      "structuredData": true
+    },
+    {
+      "route": "/services/periodontal-treatment/",
+      "title": "Gum Treatment Chennai | Periodontist Mogappair | Gum Disease Specialist",
+      "description": "Expert periodontal treatment in Mogappair, Chennai. Gum disease therapy, scaling, root planing, and gum surgery at Dr. Ravi's Dental Clinic.",
+      "canonical": "https://mogappairdentalclinic.com/services/periodontal-treatment/",
+      "robots": "index, follow",
+      "ogTitle": "Gum Treatment Chennai | Periodontist Mogappair | Gum Disease Specialist",
+      "structuredData": true
+    },
+    {
+      "route": "/services/root-canal-treatment/",
+      "title": "Root Canal Treatment Chennai | Painless RCT Mogappair | Dr. Ravi",
+      "description": "Painless root canal treatment in Mogappair, Chennai. Save your natural tooth with advanced endodontic care at Dr. Ravi's Dental Clinic. Same-day appointments available.",
+      "canonical": "https://mogappairdentalclinic.com/services/root-canal-treatment/",
+      "robots": "index, follow",
+      "ogTitle": "Root Canal Treatment Chennai | Painless RCT Mogappair | Dr. Ravi",
+      "structuredData": true
+    },
+    {
+      "route": "/services/teeth-whitening/",
+      "title": "Teeth Whitening Treatment Chennai | Professional Whitening Mogappair",
+      "description": "Safe, effective professional teeth whitening in Mogappair, Chennai. Remove stains and brighten your smile up to 8 shades lighter at Dr. Ravi's Dental Clinic.",
+      "canonical": "https://mogappairdentalclinic.com/services/teeth-whitening/",
+      "robots": "index, follow",
+      "ogTitle": "Teeth Whitening Treatment Chennai | Professional Whitening Mogappair",
+      "structuredData": true
+    },
+    {
+      "route": "/services/tooth-restoration/",
+      "title": "Tooth Restoration Chennai | Composite Fillings & Bonding Mogappair",
+      "description": "Advanced tooth restoration using composite fillings, dental bonding, and inlays in Mogappair, Chennai. Restore damaged teeth naturally at Dr. Ravi's Clinic.",
+      "canonical": "https://mogappairdentalclinic.com/services/tooth-restoration/",
+      "robots": "index, follow",
+      "ogTitle": "Tooth Restoration Chennai | Composite Fillings & Bonding Mogappair",
+      "structuredData": true
+    },
+    {
+      "route": "/services/veneers-and-laminates/",
+      "title": "Dental Veneers Chennai | Porcelain Laminates Mogappair | Smile Makeover",
+      "description": "Custom dental veneers and porcelain laminates in Mogappair, Chennai. Transform your smile with minimal-prep veneers at Dr. Ravi's Dental Clinic.",
+      "canonical": "https://mogappairdentalclinic.com/services/veneers-and-laminates/",
+      "robots": "index, follow",
+      "ogTitle": "Dental Veneers Chennai | Porcelain Laminates Mogappair | Smile Makeover",
+      "structuredData": true
+    }
+  ],
+  "metadataDiffs": [
+    {
+      "route": "/contact/",
+      "field": "description",
+      "original": "Book your appointment at Dr. Ravi's Dental Clinic in Mogappair, Chennai. Call +91 99620 02537 or visit 7/706, Brindawan Colony. Same-day emergency appointments.",
+      "built": "Book your appointment at Dr. Ravi's Dental Clinic in Mogappair, Chennai. Call +91 99620 02537 or visit No 911, HIG, 35HG+G8M, 1st Main Rd, Mogappair Eri Scheme. Same-day emergency appointments."
+    },
+    {
+      "route": "/gallery/",
+      "field": "structuredData",
+      "original": false,
+      "built": true
+    }
+  ],
+  "accessibilityIssues": [],
+  "issues": []
+}
