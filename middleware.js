@@ -1,4 +1,4 @@
-export default function middleware(request: Request) {
+export default function middleware(request) {
   const url = new URL(request.url);
 
   if (url.hostname === "mogappairdentalclinic.com") {
