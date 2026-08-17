@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "mogappairdentalclinic.com"
+        }
+      ],
+      "destination": "https://www.mogappairdentalclinic.com/:path*",
+      "permanent": true
+    }
+  ]
+}
