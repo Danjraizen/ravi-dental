@@ -33,6 +33,10 @@ function attrs(html, attr) {
 }
 
 const htmlFiles = walk(dist, ".html");
+const routeHtmlFiles = htmlFiles.filter((file) => {
+  const rel = path.relative(dist, file).replace(/\\/g, "/");
+  return !/^google[a-z0-9]+\.html$/i.test(rel);
+});
 const originalHtmlFiles = walk(root, ".html").filter(
   (file) =>
     !file.includes(`${path.sep}src${path.sep}`) &&
@@ -41,7 +45,7 @@ const originalHtmlFiles = walk(root, ".html").filter(
     !file.includes(`${path.sep}public${path.sep}`) &&
     !file.includes(`${path.sep}.astro${path.sep}`),
 );
-const routes = htmlFiles.map(routeForFile).sort();
+const routes = routeHtmlFiles.map(routeForFile).sort();
 const issues = [];
 const externalImages = new Set();
 const externalLinks = new Set();
@@ -61,7 +65,7 @@ function extractMetadata(html) {
   };
 }
 
-for (const file of htmlFiles) {
+for (const file of routeHtmlFiles) {
   const html = fs.readFileSync(file, "utf8");
   const route = routeForFile(file);
 
@@ -131,7 +135,7 @@ const originalMetadataByRoute = new Map(
   originalHtmlFiles.map((file) => [routeForFile(file.replace(root, dist)), extractMetadata(fs.readFileSync(file, "utf8"))]),
 );
 const builtMetadataByRoute = new Map(
-  htmlFiles.map((file) => [routeForFile(file), extractMetadata(fs.readFileSync(file, "utf8"))]),
+  routeHtmlFiles.map((file) => [routeForFile(file), extractMetadata(fs.readFileSync(file, "utf8"))]),
 );
 const metadataDiffs = [];
 
