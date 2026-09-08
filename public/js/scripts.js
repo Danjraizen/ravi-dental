@@ -4,6 +4,57 @@
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', function() {
+  const hasGtag = () => typeof window.gtag === 'function';
+  const trackLeadEvent = (eventName, params = {}) => {
+    if (!hasGtag()) return;
+    window.gtag('event', eventName, {
+      event_category: 'lead_generation',
+      ...params
+    });
+  };
+
+  if (new URLSearchParams(window.location.search).get('submitted') === 'true') {
+    trackLeadEvent('generate_lead', {
+      lead_type: 'contact_form',
+      form_location: 'contact_page'
+    });
+  }
+
+  document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+    link.addEventListener('click', () => {
+      trackLeadEvent('phone_click', {
+        link_url: link.href,
+        link_text: link.textContent.trim()
+      });
+    });
+  });
+
+  document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"]').forEach(link => {
+    link.addEventListener('click', () => {
+      trackLeadEvent('whatsapp_click', {
+        link_url: link.href,
+        link_text: link.textContent.trim() || link.getAttribute('aria-label') || 'WhatsApp'
+      });
+    });
+  });
+
+  document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+    link.addEventListener('click', () => {
+      trackLeadEvent('email_click', {
+        link_url: link.href,
+        link_text: link.textContent.trim()
+      });
+    });
+  });
+
+  document.querySelectorAll('.map-container iframe').forEach(map => {
+    map.addEventListener('pointerdown', () => {
+      trackLeadEvent('map_interaction', {
+        interaction_type: 'embedded_map'
+      });
+    }, { once: true });
+  });
+
   // Header scroll effect
   const header = document.querySelector('.header');
   window.addEventListener('scroll', () => {
@@ -296,6 +347,10 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       if (status) status.textContent = 'Sending your message...';
+      trackLeadEvent('form_submit_attempt', {
+        form_location: window.location.pathname,
+        form_action: form.getAttribute('action') || ''
+      });
     });
   });
 
