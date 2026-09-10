@@ -29,7 +29,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  const enquiryTopic = document.querySelector('h1')?.textContent.trim() || 'an appointment';
   document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"]').forEach(link => {
+    const whatsappUrl = new URL(link.href);
+    if (whatsappUrl.hostname === 'wa.me' && !whatsappUrl.searchParams.has('text')) {
+      whatsappUrl.searchParams.set(
+        'text',
+        `Hi, I would like to enquire about ${enquiryTopic}. I found your website.`
+      );
+      link.href = whatsappUrl.toString();
+    }
+
     link.addEventListener('click', () => {
       trackLeadEvent('whatsapp_click', {
         link_url: link.href,
